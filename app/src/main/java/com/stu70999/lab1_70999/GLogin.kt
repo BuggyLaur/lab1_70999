@@ -22,7 +22,6 @@ import androidx.compose.material3.TextFieldDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -113,12 +112,12 @@ fun ButtonPart() {
         Button(
             modifier = Modifier
                 .fillMaxWidth()
-                .background(Color.White)
+                .background(white)
                 .weight(1f),
             onClick = { },
             colors = ButtonDefaults.buttonColors(
-                containerColor = Color.White,
-                contentColor = Color.Black,
+                containerColor = white,
+                contentColor = black,
             )
         ) {
 
@@ -128,9 +127,9 @@ fun ButtonPart() {
     }
     Box(modifier = Modifier
         .width(310.dp)
-        .background(Color.LightGray)
+        .background(lightGray)
     ) {
-        Text(text = "Or continue with", fontSize = 15.sp, color = Color.Black,
+        Text(text = "Or continue with", fontSize = 15.sp, color = black,
             modifier = Modifier.align(Alignment.Center))
     }
 }
@@ -155,7 +154,7 @@ fun BottomPart(){
     }
     Box(modifier = Modifier
         .width(310.dp)
-        .background(Color.LightGray)
+        .background(lightGray)
     ){
         Row(
             modifier= Modifier
@@ -165,9 +164,9 @@ fun BottomPart(){
         ){
 
             Text(text = "Not a member?",
-                color = Color.Black)
+                color = black)
             Spacer(modifier = Modifier.width(5.dp))
-            Text(text = "Register Now", fontWeight = FontWeight.Bold, color= Color.Black,
+            Text(text = "Register Now", fontWeight = FontWeight.Bold, color= black,
                 modifier = Modifier.padding(bottom = 50.dp))
 
         }

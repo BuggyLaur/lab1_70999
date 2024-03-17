@@ -92,8 +92,8 @@ fun MLoginBox(){
 
             TextField(value = "Confirm password", onValueChange = {},
                 colors = TextFieldDefaults.colors(
-                    unfocusedContainerColor = white,
-                    focusedContainerColor = white),
+                    unfocusedContainerColor =  white,
+                    focusedContainerColor =  white),
                 modifier = Modifier.fillMaxWidth())
 
         }

@@ -12,8 +12,8 @@ class MainActivity : ComponentActivity() {
         setContent {
 
             //GLogin()
-            blogin()
-            //GSignUp()
+            //blogin()
+            GSignUp()
             //BSignUp()
         }
     }

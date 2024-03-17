@@ -32,7 +32,7 @@ import androidx.compose.ui.unit.sp
 @Composable
 fun blogin(){
     Surface (
-        color =  Color.Black,
+        color = black,
     ){
         Column(
             modifier = Modifier.fillMaxSize(),
@@ -66,7 +66,7 @@ fun myLoginBox(){
     Box(modifier = Modifier
         .height(170.dp)
         .width(320.dp)
-        .background(Color.Black)
+        .background(black)
     )
     {
         Column( modifier = Modifier.fillMaxWidth(),
@@ -120,7 +120,7 @@ fun buttonPart() {
             onClick = { },
             colors = ButtonDefaults.buttonColors(
                 containerColor = lightBlack,
-                contentColor = Color.White,
+                contentColor = white,
             )
         ) {
 
@@ -157,7 +157,7 @@ fun bottomPart(){
     }
     Box(modifier = Modifier
         .width(310.dp)
-        .background(Color.Black)
+        .background(black)
     ){
         Row(
             modifier= Modifier
