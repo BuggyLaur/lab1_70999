@@ -57,7 +57,7 @@ fun topPart(){
         modifier = Modifier.requiredSize(110.dp))
     Text(text = "Welcome back you've been missed!",
         fontSize = 15.sp,
-        color = lightBlack
+        color = lightGray
     )
 }
 
@@ -75,15 +75,17 @@ fun myLoginBox(){
         ) {
             TextField(value = "Email", onValueChange = {},
                 colors = TextFieldDefaults.colors(
+                    unfocusedTextColor = gray,
                     unfocusedContainerColor = lightBlack,
-                    focusedContainerColor = Color.Black),
+                    focusedContainerColor = black),
 
                 modifier = Modifier.fillMaxWidth())
             Spacer(modifier = Modifier.height(10.dp))
             TextField(value = "Password", onValueChange = {},
                 colors = TextFieldDefaults.colors(
+                    unfocusedTextColor = gray,
                     unfocusedContainerColor = lightBlack,
-                    focusedContainerColor = Color.Black
+                    focusedContainerColor = black
 
                 ),
                 modifier = Modifier.fillMaxWidth())
@@ -93,7 +95,7 @@ fun myLoginBox(){
                     .fillMaxWidth()
                     .padding(top = 10.dp)
             ){
-                Text(text = "Forgot Password?", fontSize = 15.sp, color = lightBlack,
+                Text(text = "Forgot Password?", fontSize = 15.sp, color = lightGray,
                     modifier = Modifier.align(Alignment.CenterEnd))
 
             }
@@ -130,7 +132,7 @@ fun buttonPart() {
         .width(310.dp)
         .background(Color.Black)
     ) {
-        Text(text = "Or continue with", fontSize = 15.sp, color = lightBlack,
+        Text(text = "Or continue with", fontSize = 15.sp, color = lightGray,
             modifier = Modifier.align(Alignment.Center))
     }
 }
@@ -165,9 +167,9 @@ fun bottomPart(){
         ){
 
             Text(text = "Not a member?",
-                color = lightBlack)
+                color = lightGray)
             Spacer(modifier = Modifier.width(5.dp))
-            Text(text = "Register now", fontWeight = FontWeight.Bold, color= lightBlack,
+            Text(text = "Register now", fontWeight = FontWeight.Bold, color= lightGray,
                 modifier = Modifier.padding(bottom = 50.dp))
 
         }

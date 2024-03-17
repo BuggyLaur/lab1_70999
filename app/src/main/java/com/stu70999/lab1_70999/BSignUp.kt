@@ -60,7 +60,7 @@ fun TopPart_black(){
     Spacer(modifier = Modifier.height(5.dp))
     Text(text = "Let's create an account for you",
         fontSize = 15.sp,
-        color = lightBlack
+        color = gray
     )
 }
 
@@ -78,24 +78,27 @@ fun MyLoginBox_black(){
         ) {
             TextField(value = "Email", onValueChange = {},
                 colors = TextFieldDefaults.colors(
+                    unfocusedTextColor = gray,
                     unfocusedContainerColor = lightBlack,
-                    focusedContainerColor = Color.Black),
+                    focusedContainerColor = black),
                 modifier = Modifier.fillMaxWidth())
 
             Spacer(modifier = Modifier.height(10.dp))
 
             TextField(value = "Password", onValueChange = {},
                 colors = TextFieldDefaults.colors(
+                    unfocusedTextColor = gray,
                     unfocusedContainerColor = lightBlack,
-                    focusedContainerColor = Color.Black),
+                    focusedContainerColor = black),
                 modifier = Modifier.fillMaxWidth())
 
             Spacer(modifier = Modifier.height(10.dp))
 
             TextField(value = "Confirm password", onValueChange = {},
                 colors = TextFieldDefaults.colors(
+                    unfocusedTextColor = gray,
                     unfocusedContainerColor = lightBlack,
-                    focusedContainerColor = Color.Black),
+                    focusedContainerColor = black),
                 modifier = Modifier.fillMaxWidth())
 
         }
@@ -114,12 +117,12 @@ fun ButtonPart_black() {
         Button(
             modifier = Modifier
                 .fillMaxWidth()
-                .background(Color.Black)
+                .background(black)
                 .weight(1f),
             onClick = { },
             colors = ButtonDefaults.buttonColors(
                 containerColor = lightBlack,
-                contentColor = Color.White,
+                contentColor = white,
             )
         ) {
 
@@ -136,7 +139,7 @@ fun BottomPart_black() {
     Box(
         modifier = Modifier
             .width(310.dp)
-            .background(color = Color.Black)
+            .background(black)
     ) {
         Row(
             modifier = Modifier
@@ -147,12 +150,12 @@ fun BottomPart_black() {
 
             Text(
                 text = "Already a member?",
-                color = lightBlack
+                color = gray
             )
             Spacer(modifier = Modifier.width(5.dp))
 
             Text(
-                text = "Login Now", fontWeight = FontWeight.Bold, color = lightBlack,
+                text = "Login Now", fontWeight = FontWeight.Bold, color = gray,
                 modifier = Modifier.padding(bottom = 20.dp)
             )
 

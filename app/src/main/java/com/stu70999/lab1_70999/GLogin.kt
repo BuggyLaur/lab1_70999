@@ -32,7 +32,7 @@ import androidx.compose.ui.unit.sp
 @Composable
 fun GLogin(){
     Surface (
-        color =  Color.LightGray,
+        color =  lightGray,
     ){
         Column(
             modifier = Modifier.fillMaxSize(),
@@ -57,7 +57,7 @@ fun TopPart(){
         modifier = Modifier.requiredSize(110.dp))
     Text(text = "Welcome back you've been missed!",
         fontSize = 15.sp,
-        color = Color.Black
+        color = black
     )
 }
 
@@ -66,7 +66,7 @@ fun MyLoginBox(){
     Box(modifier = Modifier
         .height(170.dp)
         .width(310.dp)
-        .background(Color.LightGray)
+        .background(lightGray)
     )
     {
         Column( modifier = Modifier.fillMaxWidth(),
@@ -75,15 +75,15 @@ fun MyLoginBox(){
         ) {
             TextField(value = "Email", onValueChange = {},
                 colors = TextFieldDefaults.colors(
-                    unfocusedContainerColor = Color.White,
-                    focusedContainerColor = Color.White),
+                    unfocusedContainerColor = white,
+                    focusedContainerColor = white),
 
                 modifier = Modifier.fillMaxWidth())
             Spacer(modifier = Modifier.height(10.dp))
             TextField(value = "Password", onValueChange = {},
                 colors = TextFieldDefaults.colors(
-                    unfocusedContainerColor = Color.White,
-                    focusedContainerColor = Color.White
+                    unfocusedContainerColor = white,
+                    focusedContainerColor = white
 
                 ),
                 modifier = Modifier.fillMaxWidth())
@@ -93,7 +93,7 @@ fun MyLoginBox(){
                     .fillMaxWidth()
                     .padding(top = 10.dp)
             ){
-                Text(text = "Forgot Password?", fontSize = 15.sp, color = Color.Black,
+                Text(text = "Forgot Password?", fontSize = 15.sp, color = black,
                     modifier = Modifier.align(Alignment.CenterEnd))
 
             }

@@ -22,7 +22,6 @@ import androidx.compose.material3.TextFieldDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -32,7 +31,7 @@ import androidx.compose.ui.unit.sp
 @Composable
 fun GSignUp(){
     Surface (
-        color =  Color.LightGray,
+        color = lightGray,
     ){
         Column(
             modifier = Modifier.fillMaxSize(),
@@ -59,7 +58,7 @@ fun TPart(){
     Spacer(modifier = Modifier.height(5.dp))
     Text(text = "Let's create an account for you",
         fontSize = 15.sp,
-        color = Color.Black
+        color = black
     )
 }
 
@@ -68,7 +67,7 @@ fun MLoginBox(){
     Box(modifier = Modifier
         .height(190.dp)
         .width(310.dp)
-        .background(Color.LightGray)
+        .background(lightGray)
     )
     {
         Column( modifier = Modifier.fillMaxWidth(),
@@ -77,24 +76,24 @@ fun MLoginBox(){
         ) {
             TextField(value = "Email", onValueChange = {},
                 colors = TextFieldDefaults.colors(
-                    unfocusedContainerColor = Color.White,
-                    focusedContainerColor = Color.White),
+                    unfocusedContainerColor = white,
+                    focusedContainerColor = white),
                 modifier = Modifier.fillMaxWidth())
 
             Spacer(modifier = Modifier.height(10.dp))
 
             TextField(value = "Password", onValueChange = {},
                 colors = TextFieldDefaults.colors(
-                    unfocusedContainerColor = Color.White,
-                    focusedContainerColor = Color.White),
+                    unfocusedContainerColor = white,
+                    focusedContainerColor = white),
                 modifier = Modifier.fillMaxWidth())
 
             Spacer(modifier = Modifier.height(10.dp))
 
             TextField(value = "Confirm password", onValueChange = {},
                 colors = TextFieldDefaults.colors(
-                    unfocusedContainerColor = Color.White,
-                    focusedContainerColor = Color.White),
+                    unfocusedContainerColor = white,
+                    focusedContainerColor = white),
                 modifier = Modifier.fillMaxWidth())
 
         }
@@ -113,12 +112,12 @@ fun BttonPart() {
         Button(
             modifier = Modifier
                 .fillMaxWidth()
-                .background(Color.White)
+                .background(white)
                 .weight(1f),
             onClick = { },
             colors = ButtonDefaults.buttonColors(
-                containerColor = Color.White,
-                contentColor = Color.Black,
+                containerColor = white,
+                contentColor = black,
             )
         ) {
 
@@ -134,7 +133,7 @@ fun BttomPart(){
 
     Box(modifier = Modifier
         .width(310.dp)
-        .background(Color.LightGray)
+        .background(lightGray)
     ) {
         Row(
             modifier= Modifier
@@ -144,10 +143,10 @@ fun BttomPart(){
         ){
 
             Text(text = "Already a member?",
-                color = Color.Black)
+                color = black)
             Spacer(modifier = Modifier.width(5.dp))
 
-            Text(text = "Login Now", fontWeight = FontWeight.Bold, color= Color.Black,
+            Text(text = "Login Now", fontWeight = FontWeight.Bold, color= black,
                 modifier = Modifier.padding(bottom = 20.dp))
 
         }
